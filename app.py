@@ -260,6 +260,8 @@ elif page == "News":
         st.info("No articles returned right now.")
     else:
         for it in items:
-            st.markdown(f"- **{it.get('title','')}**  
-  {it.get('source','')} · {it.get('seen','')}  
-  {it.get('url','')}")
+            st.markdown(
+                f"- **{it.get('title', '')}**  \n"
+                f"{it.get('source', '')} · {it.get('seen', '')}  \n"
+                f"{it.get('url', '')}"
+            )
